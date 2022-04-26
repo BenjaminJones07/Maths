@@ -1,0 +1,4 @@
+import subprocess, os, json, getpass
+json.dump(json.loads("".join(open(TARGET := f"C:\\Users\\{getpass.getuser() if os.path.isdir(f'C:{chr(92)}Users{chr(92)}{getpass.getuser()}') else getpass.getuser() + '.STRS'}\\AppData\\Roaming\\Code\\User\\settings.json").readlines()).replace(",\n}", "}")) | {"http.proxyStrictSSL": False, "git.enabled": True, "git.path": "C:\\Program Files\\GitHub Desktop\\resources\\app\\git\\cmd\\git.exe"}, open(TARGET, "w"))
+[os.system("code --install-extension " + i) for i in ["PKief.material-icon-theme", "eamodio.gitlens", "github.github-vscode-theme", "tomoki1207.pdf"]]
+json.dump(json.loads("".join(open(TARGET).readlines()).replace(",\n}", "}")) | {"workbench.colorTheme": "GitHub Dark", "workbench.iconTheme": "material-icon-theme"}, open(TARGET, "w"))
